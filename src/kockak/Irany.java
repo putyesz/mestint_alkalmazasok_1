@@ -5,7 +5,7 @@ package kockak;
  */
 public enum Irany{
     Fel,
-    Le,
     Jobbra,
+    Le,
     Balra
 }

@@ -1,8 +1,6 @@
 package kockak;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class AgEsKorlat {
 
@@ -76,10 +74,9 @@ public class AgEsKorlat {
 
     public static void main(String[] args) {
         Problema p = new Problema();
-        //System.out.println(p.kezdo());
         long kezdo = System.currentTimeMillis();
         List<Operator> m = new AgEsKorlat().keres(p,36);
-        System.out.println(System.currentTimeMillis() - kezdo);     //~213886
+        System.out.println((System.currentTimeMillis() - kezdo) / 60000 + " perc");     //~213886
         if ( m != null ) {
             Allapot a = p.kezdo();
             for (Operator o : m) {

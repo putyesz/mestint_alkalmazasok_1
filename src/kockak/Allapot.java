@@ -5,18 +5,21 @@ import java.awt.*;
 public class Allapot {
 
     int[][] tabla;
-    Point ures;
 
     public Allapot() {
-        this.tabla = new int[][]{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
-        this.ures = new Point(1,1);
+        this.tabla = new int[][]{{1, 1, 1},
+                                 {1, 0, 1},
+                                 {1, 1, 1}};
     }
 
     @Override
     public String toString() {
-        return tabla[0][0] + "\t" + tabla[0][1] + "\t" + tabla[0][2] +"\n" +
-                tabla[1][0] + "\t" + tabla[1][1] + "\t" + tabla[1][2] +"\n" +
-                tabla[2][0] + "\t" + tabla[2][1] + "\t" + tabla[2][2];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++)
+                System.out.print(this.tabla[i][j] + "\t");
+            System.out.println();
+        }
+        return "";
     }
 
     /**
@@ -49,6 +52,14 @@ public class Allapot {
             }
         }
         return true;
+    }
+
+    public Point getUres(){
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                if (this.tabla[i][j] == 0)
+                    return new Point(i,j);
+                return null;
     }
 }
 
