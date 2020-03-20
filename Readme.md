@@ -1,6 +1,6 @@
-#1. Projekt a mesterséges intelligencia alkamazásai tárgyra
+# 1. Projekt a mesterséges intelligencia alkamazásai tárgyra
 
-###A feladat leírása:
+### A feladat leírása:
 Adott 8 darab kocka, amelyek lapjai sötétre és világosra vannak festve.
 
 Továbbá a 8 kockát egy 3×3 mezőből álló négyzet alakú táblára helyezzük el szorosan egymás mellett.
